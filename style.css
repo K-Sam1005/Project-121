@@ -1,0 +1,92 @@
+body{
+    background: white;
+}
+
+.test_image_and_result{
+    margin-top: 15px;
+    background: linear-gradient(15deg,yellow, red);
+    border-radius: 10px;
+    width: 97%;
+    margin-bottom: 15px;
+    padding-left: 30px;
+}
+
+h3{
+    color: red;
+}
+
+.googleLens{
+    background: white;
+    border-radius: 10px;
+    line-height: 2;
+}
+
+.googleLens b{
+    color: purple;
+}
+
+.mobileNet{
+    background: white;
+    border-radius: 10px;
+    line-height: 2;
+}
+
+.mobileNet b{
+    color: purple;
+}
+
+.white{
+    color: white;
+}
+
+li img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.googleLens span{
+    color: red;
+}
+
+.mobileNet span{
+    color: red;
+}
+
+.mini_result{
+    width: 800px;
+    color: white;
+}
+
+.footer{
+    color: black;
+    position: fixed;
+    bottom: -10px;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    font-family: 'Akaya Telivigala', cursive;
+}
+
+li{
+    border-radius: 20px;
+    color: black;
+    margin-top: 10px;
+}
+
+
+.bottom{
+    overflow: hidden;
+    font-weight: bold;
+    font-size: 15px;
+    width: 50%;
+    height: 90px;
+    color: #000;
+    border: 1px solid black;
+    background: rgb(255, 139, 139);
+    border-radius: 20px;
+    line-height: 1.5;
+    margin-bottom: 50px;
+    padding: 10px;
+}

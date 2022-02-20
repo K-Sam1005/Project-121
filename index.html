@@ -1,0 +1,238 @@
+<html>
+<head>
+  <title>Real Time Image Identification App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <!--Google fonts link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Permanent+Marker&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <center>
+        <h3>Case Study Between Google Lens And MobileNet</h3>
+        <span>
+            Google Lens
+            <img src="google lens logo.png">
+        </span>
+        <h3>VS</h3>
+        <span>
+            <h3 class="btn btn-primary" id="mobilenet">Mobilenet</h3>
+        </span>
+        <hr>
+    <ol>
+        <div class="test_image_and_result col-xs-12">
+
+            <li class="col-sm-4 col-xs-12">
+                <b class="white">Test Image - </b>
+                <img src="case-study-project-between-googleLens-mobilenet-images/Cup.jpg" class="img-responsive">
+            </li>
+
+            <h5 class="googleLens col-sm-4 col-xs-12">
+                Output on <b>Google Lens - </b>
+                <span> Tea Cup</span>
+            </h5>
+
+            <h5 class="mobileNet col-sm-4 col-xs-12">
+                Output on <b>MobileNet Model - </b>
+                <span> Cup</span>
+            </h5>
+
+            <div class="mini_result col-xs-12">
+                <h4>Result - </h4>
+                <hr>
+                <h4> Both Google Lens and MobileNet are accurate</h4>
+            </div>
+
+        </div>
+        <div class="test_image_and_result col-xs-12">
+
+            <li class="col-sm-4 col-xs-12">
+                <b class="white">Test Image - </b>
+                <img src="case-study-project-between-googleLens-mobilenet-images/Headphone.jpg" class="img-responsive">
+            </li>
+
+            <h5 class="googleLens col-sm-4 col-xs-12">
+                Output on <b>Google Lens - </b>
+                <span> Boat Rockerz(Headphone)</span>
+            </h5>
+
+            <h5 class="mobileNet col-sm-4 col-xs-12">
+                Output on <b>MobileNet Model - </b>
+                <span> Vaccum Cleaner</span>
+            </h5>
+
+            <div class="mini_result col-xs-12">
+                <h4>Result - </h4>
+                <hr>
+                <h4> Google Lens is more accurate </h4>
+            </div>
+
+        </div>
+        <div class="test_image_and_result col-xs-12">
+
+            <li class="col-sm-4 col-xs-12">
+                <b class="white">Test Image - </b>
+                <img src="case-study-project-between-googleLens-mobilenet-images/lighter.jpg" class="img-responsive">
+            </li>
+
+            <h5 class="googleLens col-sm-4 col-xs-12">
+                Output on <b>Google Lens - </b>
+                <span> Pink Ball Pen</span>
+            </h5>
+
+            <h5 class="mobileNet col-sm-4 col-xs-12">
+                Output on <b>MobileNet Model - </b>
+                <span> Lighter</span>
+            </h5>
+
+            <div class="mini_result col-xs-12">
+                <h4>Result - </h4>
+                <hr>
+                <h4> MobileNet is more accurate</h4>
+                Draw
+            </div>
+
+        </div>
+        <div class="test_image_and_result col-xs-12">
+
+            <li class="col-sm-4 col-xs-12">
+                <b class="white">Test Image - </b>
+                <img src="case-study-project-between-googleLens-mobilenet-images/Marker.jpg" class="img-responsive">
+            </li>
+
+            <h5 class="googleLens col-sm-4 col-xs-12">
+                Output on <b>Google Lens - </b>
+                <span> White Board Maker</span>
+            </h5>
+
+            <h5 class="mobileNet col-sm-4 col-xs-12">
+                Output on <b>MobileNet Model - </b>
+                <span> Paint Brush</span>
+            </h5>
+
+            <div class="mini_result col-xs-12">
+                <h4>Result - </h4>
+                <hr>
+                <h4> Google Lens is more accurate</h4>
+            </div>
+
+        </div>
+        <div class="test_image_and_result col-xs-12">
+
+            <li class="col-sm-4 col-xs-12">
+                <b class="white">Test Image - </b>
+                <img src="case-study-project-between-googleLens-mobilenet-images/Pen.jpg" class="img-responsive">
+            </li>
+
+            <h5 class="googleLens col-sm-4 col-xs-12">
+                Output on <b>Google Lens - </b>
+                <span> Ballpoint Pen</span>
+            </h5>
+
+            <h5 class="mobileNet col-sm-4 col-xs-12">
+                Output on <b>MobileNet Model - </b>
+                <span> Ballpoint Pen</span>
+            </h5>
+
+            <div class="mini_result col-xs-12">
+                <h4>Result - </h4>
+                <hr>
+                <h4> Both Google Lens and MobileNet are accurate</h4>
+                Draw
+            </div>
+
+        </div>
+        <div class="test_image_and_result col-xs-12">
+
+            <li class="col-sm-4 col-xs-12">
+                <b class="white">Test Image - </b>
+                <img src="case-study-project-between-googleLens-mobilenet-images/Phone.jpg" class="img-responsive">
+            </li>
+
+            <h5 class="googleLens col-sm-4 col-xs-12">
+                Output on <b>Google Lens - </b>
+                <span> Mobile Phones</span>
+            </h5>
+
+            <h5 class="mobileNet col-sm-4 col-xs-12">
+                Output on <b>MobileNet Model - </b>
+                <span> Ipod</span>
+            </h5>
+
+            <div class="mini_result col-xs-12">
+                <h4>Result - </h4>
+                <hr>
+                <h4> Google Lens is more accurate</h4>
+            </div>
+
+        </div>
+        <div class="test_image_and_result col-xs-12">
+
+            <li class="col-sm-4 col-xs-12">
+                <b class="white">Test Image - </b>
+                <img src="case-study-project-between-googleLens-mobilenet-images/Rubik's cube.jpg" class="img-responsive">
+            </li>
+
+            <h5 class="googleLens col-sm-4 col-xs-12">
+                Output on <b>Google Lens - </b>
+                <span> Speed Cube</span>
+            </h5>
+
+            <h5 class="mobileNet col-sm-4 col-xs-12">
+                Output on <b>MobileNet Model - </b>
+                <span> Digital Clock</span>
+            </h5>
+
+            <div class="mini_result col-xs-12">
+                <h4>Result - </h4>
+                <hr>
+                <h4> Google Lens is more accurate</h4>
+            </div>
+
+        </div>
+        <div class="test_image_and_result col-xs-12">
+
+            <li class="col-sm-4 col-xs-12">
+                <b class="white">Test Image - </b>
+                <img src="case-study-project-between-googleLens-mobilenet-images/Scissors.jpg" class="img-responsive">
+            </li>
+
+            <h5 class="googleLens col-sm-4 col-xs-12">
+                Output on <b>Google Lens - </b>
+                <span> Cutting Scissors</span>
+            </h5>
+
+            <h5 class="mobileNet col-sm-4 col-xs-12">
+                Output on <b>MobileNet Model - </b>
+                <span> Can Opener</span>
+            </h5>
+
+            <div class="mini_result col-xs-12">
+                <h4>Result - </h4>
+                <hr>
+                <h4> Google Lens is more accurate</h4>
+            </div>
+
+        </div>
+
+    
+    </ol>
+
+    <h2 class="bottom">
+        I have tested 8 images. Out of them <b>Goggle Lens</b> has predicted 7 images right and <b>MobileNet</b> has predicted 3 images right. Note - In some of the images both Google Lens and MobileNet were accurate.
+    </h2>
+
+    <p class="footer">Developed by - Sam K.</p>
+</center>
+</body>
+</html>
